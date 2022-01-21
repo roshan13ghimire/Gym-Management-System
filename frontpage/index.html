@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600&display=swap" rel="stylesheet">
+
+    <link  rel="stylesheet" href="assets/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link  rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <title>Imadol Fitness</title>
+</head>
+<body >
+        <section class="main-page">
+            <div class="head-container">
+                <nav class="navbar">
+                    <div class="navbar-brand">Imadol Fitness</div>
+                    <div class="navbar-links">
+                        <ul class="nav-bar-list">
+                            <li class="nav-bar-list-item"><a href="#" class="nav-bar-list-item-link">HOME</a></li>
+                            <li class="nav-bar-list-item"><a href="#" class="nav-bar-list-item-link">ABOUT US</a></li>
+                            <li class="nav-bar-list-item"><a href="#trainers" class="nav-bar-list-item-link">TRAINERS</a></li>
+                            <li class="nav-bar-list-item"><a href="#" class="nav-bar-list-item-link">GALLERY</a></li>
+                            <li class="nav-bar-list-item"><a href="#contact" class="nav-bar-list-item-link">CONTACT</a></li>
+                            <li class="nav-bar-list-item"><a href="login.html" class="nav-bar-list-item-link">SIGN UP/ LOGIN</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-drawer" onclick="togglemenu()" id="menu-drawer">
+                         <i class="fas fa-bars"></i>
+                        <div id="menu-list">
+                            <ul class="nav-bar-list">
+                                <li ><a href="#" class="nav-bar-list-item-link">HOME</a></li>
+                                <li ><a href="#" class="nav-bar-list-item-link">ABOUT US</a></li>
+                                <li><a href="#trainers" class="nav-bar-list-item-link">TRAINERS</a></li>
+                                <li ><a href="#" class="nav-bar-list-item-link">GALLERY</a></li>
+                                <li ><a href="#" class="nav-bar-list-item-link">CONTACT</a></li>
+                                <li ><a href="#" class="nav-bar-list-item-link">SIGN UP/ LOGIN</a></li>
+                            </ul>
+                        </div>    
+                    </div>
+                </nav>
+                <div class="navbar-contact">
+                    <div class="contact-content">
+                        <h4 class="phone-number"><i class="fas fa-phone"></i> +977-9841678765</h1>
+                        <h4 class="email"><i class="fas fa-envelope-square"></i> roshan13ghimire@gmail.com</h1>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="hero-image-content">
+                        <img src="gym.jpg" class="hero-img" alt="image-of-gym" />
+                    </div>
+                </div>
+                <div class="scoll-mouse" id="scroll-mouse">
+                    <div class="blink-text"> Scroll down to see more</div> 
+                    <svg width="30" height="48" viewBox="0 0 30 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="mouse">
+                                <path d="M1 38.2732V11.0552C0.999994 -2.03032 29 -2.66936 29 11.0552V38.2732C29 50.0288 1 49.7885 1 38.2732Z" stroke="black"/>
+                                <path id="scroller" d="M11 17.1029V11.1859C11 8.34123 19 8.20231 19 11.1859V17.1029C19 19.6584 11 19.6062 11 17.1029Z" stroke="black"/>
+                            </g>
+                        </svg>
+                </div>
+            </div>
+        </section>
+        <section class="fitness-main-container">
+            <div class="fitness-main-content">
+                <div class="fitness-content-tips">
+                    <div class="tips-head-content">
+                        <p>Fitness For Life</p>
+                    </div>
+                    <div class="tips-body-content">
+                        <div class="tips-card">
+                            <div class="tip-content-image">
+                                <img src="image/yoga-posture.svg" class="tip-image"/>
+                            </div>
+                            <div class="tip-content">
+                                <div class="tip-head">
+                                    <p>Yoga Fitness</p>
+                                </div>
+                                <div class="tip-body">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tips-card">
+                            <div class="tip-content-image">
+                                <img src="image/weight.svg" class="tip-image"/>
+                            </div>
+                            <div class="tip-content">
+                                <div class="tip-head">
+                                    <p>Weight Loss</p>
+                                </div>
+                                <div class="tip-body">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tips-card">
+                            <div class="tip-content-image">
+                                <img src="image/heart.svg" class="tip-image"/>
+                            </div>
+                            <div class="tip-content">
+                                <div class="tip-head">
+                                    <p>Strength Tarning</p>
+                                </div>
+                                <div class="tip-body">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fitness-quote-container">
+                    <div class="quote-content">
+                        <div class="quote-text">
+                            <div class="quote-text-heading">
+                                Lorem ipsum dolor sit amet consectetur
+                            </div>
+                            <div class="quote-text-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique expedita unde minust praesentium? Similique temporibus voluptas obcaecati labore. Eligendi, ipsa eveniet.
+                            </div>
+                        </div>
+                        <div class="quote-image-content">
+                            <img src="image/model-man.jpg" class="quote-img"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="trainers-container" id="trainers">
+            <div class="trainers-content">
+                <div class="tips-head-content nopad">Membership Plan</div>
+                <div class="gym-membership-text">
+                    <p>We provide the best facility available in the town and with professional gym trainers help you to stay fit and healthy.</p>
+                </div>
+                    <div class="gym-membership-container">
+                        <div class="membership-card">
+                            <div class="card-head">
+                                <div><p>Silver</p></div>
+                            </div>
+                            <div class="card-body">
+                                <p><i class="fas fa-check"></i></p>
+                                <p><i class="fas fa-times"></i></p>
+                            </div>
+                            <div class="card-button">
+                                <button class="buynow-button">buy now</button>
+                            </div>
+                        </div>
+                        <div class="membership-card">
+                            <div class="card-head">
+                                <div><p>Platinum</p></div>
+                            </div>
+                            <div class="card-body">
+                                <p><i class="fas fa-check"></i></p>
+                                <p><i class="fas fa-times"></i></p>
+                            </div>
+                            <div class="card-button">
+                                <button class="buynow-button">buy now</button>
+                            </div>
+                        </div>
+                        <div class="membership-card">
+                            <div class="card-head">
+                                <div><p>Gold</p></div>
+                            </div>
+                            <div class="card-body">
+                                <p><i class="fas fa-check"></i></p>
+                                <p><i class="fas fa-times"></i></p>
+                            </div>
+                            <div class="card-button">
+                                <button class="buynow-button">buy now</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- <div class="testimony-container">
+                <div class="circle-quote">
+                    <div class="quote">"</div>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-name">
+                      Marqules Brown
+                  </div>
+                  <div class="testimony">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  </div>
+                </div>
+              </div> -->
+        </section>
+        <section class="contact-form" id="contact">
+            <section class="ok-is-block section mobile-hero">
+                <div class="ok-is-container container w-90 pt-50">
+                    <div class="columns is-variable is-multiline">
+                        <div class="column has-text-centered-desktop has-text-centered-tablet-only has-text-centered-mobile">
+                            <h1 class="ok-is-text ok-title fw-bold capitalize ecolor-a fs-52">Contact Us</h1>
+                        </div>
+                    </div>
+                        <div class="columns is-variable is-multiline is-vcentered">
+                            <div class="column">
+                                <form class="ok-is-form contactForm" data-toggle="validator" data-focus="false">
+                                    <div class="field"><div class="field-body">
+                                        <div class="ok-is-name field float-left w-50">
+                                            <div class="form-group control has-icons-left">
+                                                <input class="input form-control name font-a bw-2 capitalize custom-bdr-color" type="text" name="name" placeholder="Name" required="" data-error="Please enter your full name." style="border-color: rgb(198, 197, 197);">
+                                                <span class="icon is-small is-left"><i class="fas fa-user"></i></span><div class="help-block with-errors">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ok-is-email field float-left w-50"><div class="form-group control has-icons-left"><input class="input form-control email font-a bw-2 custom-bdr-color" type="email" name="email" placeholder="Email" required="" data-error="Please enter a valid email." style="border-color: rgb(198, 197, 197);"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span><div class="help-block with-errors"></div></div></div></div></div><div class="ok-is-subject field"><div class="form-group control"><input class="input form-control emailSubject font-a bw-2 custom-bdr-color" type="text" placeholder="Subject" required="" data-error="Please enter your subject." style="border-color: rgb(198, 197, 197);"><div class="help-block with-errors"></div></div></div><div class="ok-is-message field"><div class="form-group control"><textarea class="textarea form-control message font-a bw-2 custom-bdr-color" name="message" placeholder="Your Message" required="" data-error="Write your message." style="border-color: rgb(198, 197, 197);" spellcheck="false"></textarea><div class="help-block with-errors"></div></div></div><div class="ok-is-terms field"><div class="form-group control"><label class="checkbox"><input type="checkbox" class="terms" value="Agreed-to-Terms" required=""><span class="ok-is-text font-a ok-text fs-16 ecolor-a">I agree with Imadol Fitness's stated <a href="" target="_blank">Privacy Policy</a> and<a href="" target="_blank">Terms Conditions</a></span></label><div class="help-block with-errors"></div></div></div><div class="ok-is-submit field"><div class="form-group control"><button class="button form-submit no-border is-medium white bg-blue bg-hover-light-blue" type="submit">Send Message</button><div class="msgSubmit text-center hidden"></div><div class="clearfix"></div></div></div></form></div><div class="column is-7"><div class="ok-is-map"><img src="https://octoking.com/pro/assets/img/media/mymap-1.png" class="w-100" alt="map"></div></div></div></div></section><script id="hm-jq" type="text/javascript" src="assets/js/jquery.min.js"></script><script id="hm-vali-contact" type="text/javascript" src="assets/js/validator.min.js"></script>
+
+
+<script type="text/javascript" src="assets/js/custom.js"></script><script>
+$(".contactForm").validator().on("submit", function (event) {
+    if (event.isDefaultPrevented()) {
+        // handle the invalid form...
+        formError();
+        submitMSG(false, "Did you fill in the form properly?");
+    } else {
+        // everything looks good!
+        event.preventDefault();
+        submitForm();
+    }
+});
+function submitForm(){
+    // Initiate Variables With Form Content
+    var name = $(".contactForm").find(".name").val();
+    var email = $(".contactForm").find(".email").val();
+    var subject = $(".contactForm").find(".emailSubject").val();
+	  var selectopt = $(".contactForm").find(".select").val();
+    var message = $(".contactForm").find(".message").val();
+    var terms = $(".contactForm").find(".terms").val();
+    $.ajax({
+        type: "POST",
+        url: "assets/php/getintouch.php",
+        data: "name=" + name + "&email=" + email + "&emailSubject=" + subject + "&select=" + selectopt + "&message=" + message + "&terms=" + terms,
+        success : function(text){
+            if (text == "success"){
+                formSuccess();
+            } else {
+                formError();
+                submitMSG(false,text);
+            }
+        }
+    });
+}
+function formSuccess(){
+    $(".contactForm")[0].reset();
+    submitMSG(true, "")
+}
+function formError(){
+    $('.contactForm').removeClass().addClass('animate__animated animate__shakeX').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(this).removeClass();
+    });
+}
+function submitMSG(valid, msg){
+    if(valid){
+        var msgClasses = "help green fw-bold fs-18 text-left animate__animated animate__heartBeat";
+    } else {
+        var msgClasses = "help red fs-18 text-left";
+    }
+    $(".msgSubmit").removeClass().addClass(msgClasses).text(msg);
+}
+</script>
+        </section>
+<script>
+    function togglemenu (){
+        var getbody=document.getElementById("menu-drawer");
+            getbody.classList.toggle("menu-active");
+        if(document.getElementsByClassName("menu-active").length)
+        {
+           document.getElementById("menu-list").style.display="block"
+        }
+        else{
+            document.getElementById("menu-list").style.display="none"
+        }
+    }
+    
+</script>
+
+</body>
+</html>

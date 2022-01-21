@@ -1,0 +1,53 @@
+.testimony-container{
+	display:flex;
+    width:max-content;
+    justify-content:space-between;
+    align-items:center;
+    background:#f0efed;
+    padding:10px;
+	
+}
+.circle-quote{
+	border:2px solid #e94c3d;;
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    position:relative;
+    font-family: 'Catamaran', sans-serif;
+	font-size:70px;
+    margin-right:5px;
+}
+.quote{
+	position:absolute;
+    transform:rotate(180deg);
+    left:16px;
+    top:-50px !important;
+    color:#e94c3d;
+    font-weight:800;
+ 
+}
+.author-name{
+	font-style:italic;
+    font-weight:700;
+    font-size:16px;
+    text-align:justify;
+}
+.testimony{
+	width:70%;
+}
+</style>
+</head>
+<body>
+<div class="testimony-container">
+  <div class="circle-quote">
+      <div class="quote">"</div>
+  </div>
+  <div class="testimonial-author">
+  	<div class="author-name">
+    	Marqules Brown
+    </div>
+    <div class="testimony">
+    	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    </div>
+  </div>
+</div>

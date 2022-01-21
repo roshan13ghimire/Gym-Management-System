@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600&display=swap" rel="stylesheet">
+    <title>Login || Imadol Fitness</title>
+</head>
+<body >
+  <div class="login-main-container" id="loginform">
+    <div class="login-title">Login</div>
+    <form action="../afterLogin/php/login.php" method = "POST">
+    <div class="login-body">
+      <div class="email-box">
+        <div class="label-email-box fitbox">Email</div>
+        <div class="input-email-box">
+          <input type="email" class="wrapper" placeholder="some@email.com" name = "email" validate autocomplete="false"/>
+        </div>
+      </div>
+      <div class="password-box">
+        <div class="label-password-box fitbox">Password</div>
+        <div class="input-password-box">
+          <input
+          name = "password"
+            type="password"
+            class="wrapper"
+            placeholder="your password"
+          />
+        </div>
+      </div>
+      <div class="type-box">
+        <div class="label-user-box fitbox">Role</div>
+        <div class="input-user-box">
+          <div class="wrapper">
+            <input
+              type="radio"
+              name="select"
+              id="option-1"
+              checked
+              value="user"
+            />
+            <input type="radio" name="select" id="option-2" value="trainer" />
+            <input type="radio" name="select" id="option-3" value="admin" />
+            <label for="option-1" class="option option-1">
+              <div class="dot"></div>
+              <span>User</span>
+            </label>
+            <label for="option-2" class="option option-2">
+              <div class="dot"></div>
+              <span>Trainer</span>
+            </label>
+            <label for="option-3" class="option option-3">
+              <div class="dot"></div>
+              <span>Admin</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </form>
+      <div class="btn-box">
+        <button class="btn-login">Login</button>
+      </div>
+    </div>
+    <div style="padding:15px 40px">Dont have an account ? <button class="btn-login register" onclick="switchform()">Register</button></div>
+  </div>
+  <form action="../afterLogin/php/register.php" method="POST">
+  <div class="login-main-container hide" id="register">
+    <div class="login-title">Register</div>
+    <div class="login-body">
+      <div class="email-box">
+        <div class="label-email-box fitbox">Email</div>
+        <div class="input-email-box">
+          <input type="email" class="wrapper" placeholder="some@email.com" name = "email" />
+        </div>
+      </div>
+      <div class="password-box">
+        <div class="label-password-box fitbox">Password</div>
+        <div class="input-password-box">
+          <input
+          name = "password"
+            type="password"
+            class="wrapper"
+            placeholder="your password"
+          />
+        </div>
+      </div>
+      <div class="btn-box">
+        <button class="btn-login register">Register</button>
+      </div>
+    </div>
+    <div class="extra-info">Already have an account ? <button class="btn-login extraspace" onclick="switchform()">Login</button></div>
+  </div>
+</form>
+<script>
+    function togglemenu (){
+        var getbody=document.getElementById("menu-drawer");
+            getbody.classList.toggle("menu-active");
+        if(document.getElementsByClassName("menu-active").length)
+        {
+           document.getElementById("menu-list").style.display="block"
+        }
+        else{
+            // document.getElementById("menu-list").style.display="none"
+        }
+    }
+    function switchform(){
+      var a=document.getElementById("loginform");
+      var b=document.getElementById("register");
+      if(a)
+      {
+        a.classList.toggle("hide");
+        b.classList.toggle("show");
+      }
+    }
+</script>
+
+</body>
+</html>

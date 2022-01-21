@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        .register{
+            margin-bottom:10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="trainerregister.php" method="POST">
+        <div class="login-main-container" id="register">
+          <div class="login-title">Register</div>
+          <div class="login-body">
+            <div class="email-box">
+                <div class="label-email-box fitbox">First Name</div>
+                <div class="input-email-box">
+                  <input type="text" class="wrapper" placeholder="fname" name = "fname" />
+                </div>
+              </div>
+              <div class="email-box">
+                <div class="label-email-box fitbox">Last Name</div>
+                <div class="input-email-box">
+                  <input type="text" class="wrapper" placeholder="lname" name = "lname" />
+                </div>
+              </div>
+            <div class="email-box">
+              <div class="label-email-box fitbox">Email</div>
+              <div class="input-email-box">
+                <input type="email" class="wrapper" placeholder="some@email.com" name = "email" />
+              </div>
+            </div>
+            <div class="password-box">
+              <div class="label-password-box fitbox">Password</div>
+              <div class="input-password-box">
+                <input
+                name = "password"
+                  type="password"
+                  class="wrapper"
+                  placeholder="your password"
+                />
+              </div>
+            </div>
+            <div class="email-box">
+                <div class="label-email-box fitbox">Number</div>
+                <div class="input-email-box">
+                  <input type="number" class="wrapper" placeholder="number" name = "number" />
+                </div>
+              </div>
+            <div class="btn-box">
+              <button class="btn-login register">Register</button>
+            </div>
+        </div>
+        </div>
+      </form>
+</body>
+</html>

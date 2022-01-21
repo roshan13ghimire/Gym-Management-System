@@ -1,0 +1,456 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+/* html{
+    scroll-snap-type: y mandatory;
+}
+section{
+    scroll-snap-align: start;
+} */
+.main-page{
+    height: 100vh;
+    overflow: hidden;
+}
+.head-container{
+    height: 75%;
+    background-color: #e94c3d;
+    color:white;
+    animation: all .6s ease;
+}
+.navbar{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    letter-spacing: 1px;
+}
+.nav-bar-list{
+    list-style: none;  
+    font-size: 20px;
+}
+.navbar-brand{
+    padding: 20px 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+li{
+    float: left;
+    padding: 20px 10px;
+}
+a{
+    text-decoration: none;
+    color:inherit
+}
+.menu-drawer{
+    display: none;
+}
+.navbar-contact{
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    margin: 0px auto;
+    
+}
+#scroll-mouse{
+    display: none;
+}
+.contact-content{
+    display: flex;
+    width: fit-content;
+    background-color: #bd2010;
+    padding: 15px;
+}
+.contact-content *{
+    margin: 0px 5px;
+}
+
+.hero-image-content{
+    width: 90%;
+    margin: 0px auto;
+    height: 500px;
+}
+.hero-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.fitness-main-container{
+    /* height: 100vh; */
+    padding: 20px 0px;
+}
+
+.fitness-content-tips{
+    height: 50vh;
+    width: 80%;
+    margin: 0px auto;
+}
+.fitness-content-quote{
+    height: 50vh;
+    width: 90%;
+}
+.tips-head-content{
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2em;
+}
+.tips-body-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tips-card{
+    box-shadow: 0px -1px 5px 2px rgba(0,0,0,0.09);
+    width: 250px;
+    height: 250px;
+}
+.tip-content-image{
+    padding:10px 0px;
+    height: 50%;
+    width: fit-content;
+    margin: 0px auto;
+}
+.tip-image{
+    width: 65px;
+}
+.tip-head{
+    font-weight: 600;
+}
+.tip-content{
+    text-align: center;
+}
+.fitness-quote-container{
+    height: 50vh;
+}
+.quote-content{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.quote-content *{
+    flex:1
+}
+.quote-text-heading{
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.quote-text{
+    margin: auto;
+}
+
+
+#menu-list{
+    display: none;
+}
+.show-menu{
+    display: block;
+}
+.trainers-content{
+    height: 100vh;
+}
+.trainers-container{
+    padding: 20px 0px;
+
+}
+.gym-membership-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 40px auto;
+}
+.membership-card{
+    height: 50vh;
+    width: 250px;
+    background-color: #e94c3d;
+    position: relative;
+    border-radius: 5px;
+}
+.card-head{
+    top:0;
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: x-large;
+    padding: 20px;
+    color: white;
+}
+
+.card-body{
+    height: 60%;
+    width: 90%;
+    margin: 10px auto;
+    color: white;
+}
+.fa-check{
+    color: limegreen;
+}
+.fa-times{
+    color: #bd2010;
+}
+.card-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom:0;
+    height: 20%;
+    width: 100%;
+    background-color: crimson;
+    border-radius: 5px;
+
+}
+.buynow-button{
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border:none;
+    transition: all .4s ease;
+}
+.nopad{
+    padding: 0;
+}
+.gym-membership-text{
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+    margin: 0px auto;
+    font-size: larger;
+}
+.buynow-button:hover{
+    background-color: #bd2010;
+    color: white;
+    transition: all .4s ease;
+}
+
+
+/* .testimony-container{
+	display:flex;
+    width:max-content;
+    justify-content:space-between;
+    align-items:center;
+    background:#f0efed;
+    padding:10px;
+	
+}
+.circle-quote{
+	border:2px solid #e94c3d;;
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    position:relative;
+    font-family: 'Catamaran', sans-serif !important;
+	font-size:70px;
+    margin-right:5px;
+}
+.quote{
+	position:absolute;
+    transform:rotate(180deg);
+    left:16px;
+    top:-50px !important;
+    color:#e94c3d;
+    font-weight:800;
+ 
+}
+.author-name{
+	font-style:italic;
+    font-weight:700;
+    font-size:16px;
+    text-align:justify;
+}
+.testimony{
+	width:70%;
+} */
+
+/* .contact-form{
+    height: 100vh;
+} */
+
+
+/* reposnsive design */
+
+@media only screen and (max-width: 940px) {
+    
+    body{
+        transition: all .7s ease;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .navbar-contact{
+        width: 100%;
+    }
+    .contact-content{
+        flex-direction: column;
+    }
+    
+    .tips-card{
+        width: 200px;
+        height: 200px;
+        margin: 8px 0px;
+    }
+    .menu-drawer{
+        display: block;
+        padding: 20px;
+        transition: all .7s ease;
+    }
+    .quote-content{
+        flex-direction: column-reverse;
+    }
+    .menu-active{
+        height: 100vh;
+        background-color: #e94c3d;
+        width: 50vw;
+        position: absolute;
+        right: 0;
+        top:0;
+        z-index: 99;
+        animation: menu-anime .7s ease ;
+    }
+    @keyframes menu-anime {
+        from{
+            right: -100px;
+            opacity: 0;
+        }
+        to{
+            right:0px;
+            opacity: 1;
+        }
+    }
+        
+    li{
+        float: none;
+    }
+
+    .membership-card{
+        height: 50vh;
+        width: 200px;
+        background-color: #e94c3d;
+        position: relative;
+        border-radius: 5px;
+    }
+  }
+
+ 
+
+  @media only screen and (max-width:790px) {
+    .tips-body-content{
+        flex-direction: column;
+    }
+    .tips-card{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .tip-content{
+        height: fit-content;
+        margin: auto;
+    }
+    img.tip-image {
+        padding: 5px;
+    }
+    .quote-text-heading{
+        margin-bottom: 0px;
+    }
+    .fitness-content-tips {
+        height: 50vh;
+        width: 90%;
+        margin: 0px auto;
+    }
+    .trainer-card {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        margin: 5px 0px;
+        justify-content: space-between;
+    }
+    .trainer-image{
+        height: 100%;
+    }
+    .gym-membership-container{
+        flex-direction: column;
+    }
+    .membership-card{
+        height: 20vh;
+        width: 90%;
+        background-color: #e94c3d;
+        position: relative;
+        border-radius: 10px;
+        display: flex;
+        margin: 10px 0px;
+    }
+    .card-head,.card-body,.card-button{
+        height: 100%;
+    }
+    .buynow-button {
+        width: max-content;
+    }
+    .card-button{
+        width: fit-content;
+        padding: 10px;
+    }
+    .card-head *{
+        margin: 40px 0px;
+    }
+    .card-head{
+        width: 50%;
+    }
+  }
+
+  @media only screen and (max-width:720px){
+    .navbar-contact{
+        margin-top: 20%;
+    }
+    .hero-image-content{
+        height: fit-content;
+    }
+   
+}
+@media only screen and (max-width:720px){
+    #scroll-mouse{
+        display: block;
+        position: absolute;
+        bottom:30px;
+        height: 50px;
+        color: black !important;
+        margin: 0px auto;
+        width: 100%;
+        text-align: center;
+    }
+    #scroller{
+        animation:move .8s linear infinite alternate ;
+    }
+    @keyframes move {
+        from{
+            transform: translateY(0);
+        }
+        to{
+            transform: translateY(5%);
+        }
+    }
+    .scroll-mouse{
+        display: flex;
+    }
+    .blink-text{
+        margin-top: -5px;
+    }
+    /* .blink-text{
+        animation: blink .4s linear infinite;
+    }
+    @keyframes blink {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        } */
+}

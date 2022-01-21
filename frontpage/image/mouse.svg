@@ -1,0 +1,4 @@
+<svg width="30" height="48" id="mouse" viewBox="0 0 30 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 38.2732V11.0552C0.999994 -2.03032 29 -2.66936 29 11.0552V38.2732C29 50.0288 1 49.7885 1 38.2732Z" stroke="black"/>
+<path id="scroller" d="M11 17.1029V11.1859C11 8.34123 19 8.20231 19 11.1859V17.1029C19 19.6584 11 19.6062 11 17.1029Z" stroke="black"/>
+</svg>
